@@ -1,7 +1,7 @@
 s=input()
-h=0
+c=0
 for i in s:
     if i.isupper():
-        h+=1
-print(h)        
-    
+        c+=1
+print(c)        
+   
