@@ -1,13 +1,11 @@
 n=input()
-s=input()
-p=[]
-for i in n:
-    p.append(i)
+k=input()
+p=list(n)
+g=0
 for i in range(len(p)):
-    if p[i]==s:
-        print(True)
-        print(i)
-        break
+    if k==p[i]:
+     print(True)
+     print(i)
+     break
 else:
     print(False)
-    
