@@ -1,6 +1,10 @@
-n=input()
-y=n.split()
-k=y[0]
-print(min(k),end=" ")
-j=y[-1]
-print(max(j),end=" ")
+o=input()
+s=o.split()
+for i in s:
+     p=min(i)
+     break
+k=s[::-1]
+for i in k:
+    k=max(i)
+    break
+print(p,k)
