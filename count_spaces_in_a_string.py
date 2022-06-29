@@ -1,6 +1,6 @@
-s=input()
-f=0
-for i in s:
+n=input()
+c=0
+for i in n:
     if i==" ":
-        f+=1
-print(f)  
+        c+=1
+print(c)        
