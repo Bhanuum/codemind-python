@@ -1,6 +1,6 @@
 n=input()
-c=1
-for i in n:
-    if i==" ":
-        c+=1
-print(c)        
+p=n.split()
+c=0
+for i in p:
+    c+=1
+print(c)    
