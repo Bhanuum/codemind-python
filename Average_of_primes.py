@@ -4,15 +4,14 @@ def prime(n):
     for i in range(2,int(n**0.5)+1):
         if n%i==0:
             return False
-    return True 
+    return True
 n=int(input())
-k=list(map(int,input().split()))
-s=0
+p=list(map(int,input().split()))
 c=0
-j=[]
+s=0
 for i in range(0,n):
-    if prime(k[i]):
+    if prime(p[i]):
         c+=1
-        s+=k[i]
-g=s/c        
-print("%0.2f"%g)    
+        s+=p[i]
+k=s/c
+print("%0.2f" %k)
