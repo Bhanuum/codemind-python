@@ -15,4 +15,4 @@ for i in range(0,n):
         c+=1
         s+=k[i]
 g=s/c        
-print("%0.2f"%g)        
+print("%0.2f"%g)    
