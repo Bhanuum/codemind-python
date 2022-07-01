@@ -1,10 +1,10 @@
-k,l=map(int,input().split())
-n=list(map(int,input().split()))
-m=list(map(int,input().split()))
-p=[]
-for i in range(0,k):
-    for j in range(0,l):
-        if n[i]==m[j]:
-            if n[i] not in p:
-               p.append(n[i])
-print(*p)            
+a,b=map(int,input().split())
+p=list(map(int,input().split()))
+q=list(map(int,input().split()))
+g=[]
+for i in range(0,a):
+    for j in range(0,b):
+        if p[i]==q[j]:
+            if p[i] not in g:
+               g.append(p[i])
+print(*g) 
