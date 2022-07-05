@@ -1,15 +1,10 @@
-p=input()
-s=p.split()
-u=[]
-for i in s:
+n=input()
+m=n.split()
+p=[]
+for i in m:
     c=0
     for j in i:
-        if j in "aeiou":
+        if j in "aeiouAEIOU":
             c+=1
-    u.append(c)
-
-for i in range(0,len(u)):
-    min=u[0]
-    if u[i]<min:
-        min=u[i]
-print(min)
+    p.append(c)
+print(min(p))    
