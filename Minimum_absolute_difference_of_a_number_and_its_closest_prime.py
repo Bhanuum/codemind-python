@@ -16,5 +16,3 @@ if p<k:
         print(p)
 else:
         print(k)
-        
-            
