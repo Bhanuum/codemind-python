@@ -1,14 +1,11 @@
 n=int(input())
-k=list(map(int,input().split()))
+p=list(map(int,input().split()))
 a,b=map(int,input().split())
-c=0
-p=[]
-h=0
+c=[]
 for i in range(0,n):
-    if k[i]>=a and k[i]<=b:
-        h+=1
-        p.append(k[i])
-if h>0:
-    print(min(p))
-elif h==0:
+    if p[i]>=a and p[i]<=b:
+        c.append(p[i])
+if len(c)>1:        
+ print(min(c))  
+else:
     print("-1")
