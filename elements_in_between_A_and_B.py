@@ -1,10 +1,11 @@
 n=int(input())
-k=list(map(int,input().split()))
+p=list(map(int,input().split()))
 a,b=map(int,input().split())
-c=0
+c=[]
 for i in range(0,n):
-    if k[i]>=a and k[i]<=b:
-        c+=1
-        print(k[i],end=" ")
-if c==0:
-        print("-1")
+    if p[i]>=a and p[i]<=b:
+        c.append(p[i])
+if len(c)>1:        
+ print(*c)
+else:
+    print("-1")
