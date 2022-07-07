@@ -8,4 +8,4 @@ for i in p:
 for i in k:
     if i not in p:
         c.append(i)
-print(*c)        
+print(*c) 
