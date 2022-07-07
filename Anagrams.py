@@ -1,17 +1,11 @@
-n=input().lower()
-m=input().lower()
+a=input().lower()
+b=input().lower()
 c=0
-p=[]
-for i in n:
-    for j in m:
+for i in a:
+    for j in b:
         if i==j:
-            p.append(i)
-k=[]            
-for i in m:
-    for j in n:
-        if i==j:
-          k.append(i)
-if len(p)==len(n) and len(k)==len(m):
-  print(True)
+            c+=1
+if c==len(a):
+    print(True)
 else:
     print(False)
