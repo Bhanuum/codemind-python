@@ -1,12 +1,19 @@
 n=input().lower()
 m=input().lower()
-c=[]
-for i in n:
-    if i not in m and i!=" ":
-        if i not in c:
-            c.append(i)
+c=""
 for i in m:
-    if i not in n and i!=" ":
+    if i not in n:
         if i not in c:
-            c.append(i)            
-print(len(c))            
+          c+=i
+for i in n:
+    if i not in m:
+        if i not in c:
+         c+=i
+p=sorted(c)
+p=str(p)
+p=p.replace(" ","")
+p=p.replace("]","")
+p=p.replace("[","")
+p=p.replace(",","")
+p=p.replace("'","")
+print(len(p))
