@@ -1,10 +1,10 @@
-n,m=map(int,input().split())
-b=[]
-for i in range(n):
-    p=list(map(int,input().split()))
-    b.append(p)
+m,n=map(int,input().split())
+p=[]
 s=0
-for i in range(n):
-    for j in range(m):
-        s+=b[i][j]
+for i in range(m):
+    h=list(map(int,input().split()))
+    p.append(h)
+for j in range (n):
+    for i in range(m):
+        s+=p[i][j]
 print(s)        
