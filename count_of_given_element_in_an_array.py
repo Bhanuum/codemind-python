@@ -1,0 +1,5 @@
+n= int(input())
+arr = list(map(int,input().split()))
+b=int(input())
+h=arr.count(b)
+print(h)
