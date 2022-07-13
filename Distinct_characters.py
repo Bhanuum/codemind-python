@@ -1,18 +1,12 @@
-n = input()
-n = n.lower()
-n = n.replace(" ","")
-s = []
-for i in range(0,len(n)):
-    c = n.count(n[i])
-    if c==1:
-        s.append(n[i])
-s.sort()
-s = str(s)
-s = s.replace(",","")
-s = s.replace("[","")
-s = s.replace("]","")
-s = s.replace(",","")
-s = s.replace("'","")
-s = s.replace(" ","")
-print(s)
- 
+n=input().lower()
+p=" "
+for i in n:
+    if i not in p:
+        p+=i
+k=list(p)
+j=(sorted(k))
+g=""
+for i in j:
+    if i!=" ":
+     g+=str(i)
+print(g)    
